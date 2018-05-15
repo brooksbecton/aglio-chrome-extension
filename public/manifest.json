@@ -1,0 +1,11 @@
+{
+  "short_name": "Aglio",
+  "name": "Aglio Recipe Saver",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "React Ext"
+  },
+  "permissions": ["pageCapture", "tabs"],
+  "version": "1.0"
+}
