@@ -4,7 +4,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true npm test && npm run docs"
+      "pre-commit": "CI=true npm test"
     }
   },
   "dependencies": {
