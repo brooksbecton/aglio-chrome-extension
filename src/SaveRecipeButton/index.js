@@ -9,6 +9,14 @@ class SaveRecipeButton extends Component {
     handleSave: PropTypes.func
   };
 
+  constructor() {
+    super();
+
+    this.state = {
+      saveError: ""
+    };
+  }
+
   /**
    * Captures the page source of the provided tabId
    * Uses {@link https://developer.chrome.com/extensions/pageCapture | pageCapture}
@@ -50,21 +58,28 @@ class SaveRecipeButton extends Component {
    * @async
    */
   saveRecipe = async () => {
+    let currentTabId;
+    let mHtml;
     try {
-      const { id: currentTabId } = await this.getCurrentTab();
+      const { id } = await this.getCurrentTab();
+      currentTabId = id;
     } catch (err) {
       this.displayError(err);
     }
 
     try {
-      const mHtml = await this.capturePage(currentTabId);
-    } catch (err) {}
+      mHtml = await this.capturePage(currentTabId);
+    } catch (err) {
+      this.displayError(err);
+    }
   };
   render() {
     return (
       <div>
         <button onClick={() => this.saveRecipe()}>Save Recipe</button>
-        <p>{this.state.saveError && this.state.saveError}</p>
+        <p className="error">
+          {this.state.saveError.length > 0 && this.state.saveError}
+        </p>
       </div>
     );
   }
