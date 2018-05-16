@@ -18,18 +18,18 @@ class SaveRecipeButton extends Component {
   }
 
   /**
-   * Captures the page source of the provided tabId
+   * Captures the page source of the page the user's active page
    * Uses {@link https://developer.chrome.com/extensions/pageCapture | pageCapture}
-   * @async
-   * @param <Number>  tabId - tab id of a valid tab
-   * @returns <Promise> - represents the
+   * @returns <Promise> - represents the html of the current page
    */
-  capturePage = tabId => {
-    return Promise((resolve, reject) => {
-      chrome.pageCapture({ tabId }, mHtml => {
-        console.log(mHtml);
-        resolve(mHtml);
-      });
+  capturePage = () => {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(
+        { code: "document.querySelector('body').innerHTML" },
+        ({ 0: html }) => {
+          resolve(html);
+        }
+      );
     });
   };
 
@@ -42,36 +42,11 @@ class SaveRecipeButton extends Component {
   };
 
   /**
-   * Gets the user's current active tab
-   * Uses {@link https://developer.chrome.com/extensions/tabs#method-getCurrent| tabs.getCurrent}
-   * @returns <Promise> - represents {@link https://developer.chrome.com/extensions/tabs#type-Tab | all tab data} of the current tab
-   */
-  getCurrentTab = () => {
-    return Promise((resolve, reject) => {
-      chrome.tabs.getCurrent(tab => {
-        tab ? resolve(tab) : reject(new Error("No Current Tab"));
-      });
-    });
-  };
-  /**
    * Driver function to save a recipe
    * @async
    */
   saveRecipe = async () => {
-    let currentTabId;
-    let mHtml;
-    try {
-      const { id } = await this.getCurrentTab();
-      currentTabId = id;
-    } catch (err) {
-      this.displayError(err);
-    }
-
-    try {
-      mHtml = await this.capturePage(currentTabId);
-    } catch (err) {
-      this.displayError(err);
-    }
+    let html = await this.capturePage();
   };
   render() {
     return (
