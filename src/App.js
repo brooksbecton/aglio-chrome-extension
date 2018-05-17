@@ -16,13 +16,14 @@ class App extends Component {
    */
   scrapePageRecipe = async () => {
     const scraper = await this.scraperFactory.create();
-    scraper.getHTML();
+    await scraper.run();
   };
 
   render() {
     return (
       <div>
         <SaveRecipeButton scrapePageRecipe={this.scrapePageRecipe} />
+        <div className="recipeHtml" />
       </div>
     );
   }

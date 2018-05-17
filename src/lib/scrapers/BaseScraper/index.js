@@ -1,10 +1,10 @@
 /*global chrome*/
 
 /** Interface for Getting and parsing HTML for recipes */
-class BaseScrape {
-  /** Initialized html property */
-  constructor() {
-    this.html = "";
+class BaseScraper {
+  /** Initialized html to null and url property */
+  constructor(url) {
+    this.url = url;
   }
 
   /**
@@ -15,10 +15,12 @@ class BaseScrape {
   getHTML() {
     return new Promise((resolve, reject) => {
       chrome.tabs.executeScript(
-        { code: "document.querySelector('body').innerHTML" },
+        { code: "document.querySelector('html').innerHTML" },
         results => {
           if (results) {
-            this.html = results[0];
+            const recipeSource = document.createElement("html");
+            recipeSource.innerHTML = results[0];
+            document.querySelector(".recipeHtml").appendChild(recipeSource);
             resolve();
           } else {
             reject();
@@ -48,6 +50,25 @@ class BaseScrape {
    * @returns {Object} reprsenting the meta data in a recipe
    */
   getMeta() {}
+
+  /**
+   * Main Driver for scraper
+   *
+   * @async
+   * @type RecipeData
+   * @property {String} url URL the data was pulled from
+   * @property {Array} ingredients ingredients of recipe
+   * @property {Object} meta Meta data about the recipe
+   * @returns {RecipeData}
+   */
+  async run() {
+    await this.getHTML();
+    const recipe = this.getRecipe();
+    const ingredients = this.getIngredients();
+    const meta = this.getMeta();
+
+    return { url: this.url, recipe, ingredients, meta };
+  }
 }
 
-export default BaseScrape;
+export default BaseScraper;
