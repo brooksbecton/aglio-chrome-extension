@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: App.js</title>
+    <title>JSDoc: Source: lib/scrapers/AllRecipesScraper/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: App.js</h1>
+    <h1 class="page-title">Source: lib/scrapers/AllRecipesScraper/index.js</h1>
 
     
 
@@ -26,22 +26,15 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Component } from "react";
+            <pre class="prettyprint source linenums"><code>import BaseScraper from "./../BaseScraper";
 
-import SaveRecipeButton from "./SaveRecipeButton";
+/**
+ * Class representing the web scraper to pull recipe data from a www.allrecipes.com webpage
+ * @extends BaseScraper
+ */
+class AllRecipesScraper extends BaseScraper {}
 
-/** Wrapper for application */
-class App extends Component {
-  render() {
-    return (
-      &lt;div>
-        &lt;SaveRecipeButton />
-      &lt;/div>
-    );
-  }
-}
-
-export default App;
+export default AllRecipesScraper;
 </code></pre>
         </article>
     </section>

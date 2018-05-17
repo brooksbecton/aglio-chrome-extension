@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: SaveRecipeButton/index.js</title>
+    <title>JSDoc: Source: lib/scrapers/BaseScraper/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: SaveRecipeButton/index.js</h1>
+    <h1 class="page-title">Source: lib/scrapers/BaseScraper/index.js</h1>
 
     
 
@@ -28,26 +28,10 @@
         <article>
             <pre class="prettyprint source linenums"><code>/*global chrome*/
 
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-
-import ScraperFactory from "./../lib/scrapers/ScraperFactory";
-
-/** Saves the users current page content */
-class SaveRecipeButton extends Component {
-  static propTypes = {
-    handleSave: PropTypes.func
-  };
-
-  /**
-   * Initializes State
-   */
+/** Interface for Getting and parsing HTML for recipes */
+class BaseScrape {
   constructor() {
-    super();
-
-    this.state = {
-      saveError: ""
-    };
+    this.html = "";
   }
 
   /**
@@ -55,45 +39,41 @@ class SaveRecipeButton extends Component {
    * Uses {@link https://developer.chrome.com/extensions/pageCapture | pageCapture}
    * @returns &lt;Promise> - represents the html of the current page
    */
-  capturePage = () => {
+  getHTML() {
     return new Promise((resolve, reject) => {
       chrome.tabs.executeScript(
         { code: "document.querySelector('body').innerHTML" },
         ({ 0: html }) => {
-          resolve(html);
+          this.html = html;
+          resolve();
         }
       );
     });
-  };
-
-  /**
-   * Sets the state of 'saveError' to a supplied error message
-   * @param {Error} err
-   */
-  displayError = err => {
-    this.setState({ saveError: err });
-  };
-
-  /**
-   * Driver function to save a recipe
-   * @async
-   */
-  saveRecipe = async () => {
-    let html = await this.capturePage();
-  };
-  render() {
-    return (
-      &lt;div>
-        &lt;button onClick={() => this.saveRecipe()}>Save Recipe&lt;/button>
-        &lt;p className="error">
-          {this.state.saveError.length > 0 &amp;&amp; this.state.saveError}
-        &lt;/p>
-      &lt;/div>
-    );
   }
+
+  /**
+   * Parses and returns steps of a recipe
+   *
+   * @returns {Array} Array of Strings reprsenting the steps in a recipe
+   */
+  getRecipe() {}
+
+  /**
+   * Parses and returns ingredients of a recipe
+   *
+   * @returns {Array} Array of Strings reprsenting the ingredients in a recipe
+   */
+  getIngredients() {}
+
+  /**
+   * Parses and returns meta data of a recipe
+   *
+   * @returns {Object} reprsenting the meta data in a recipe
+   */
+  getMeta() {}
 }
 
-export default SaveRecipeButton;
+export default BaseScrape;
 </code></pre>
         </article>
     </section>
