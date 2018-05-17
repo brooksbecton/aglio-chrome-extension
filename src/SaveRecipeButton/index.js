@@ -3,12 +3,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+import ScraperFactory from "./../lib/scrapers/ScraperFactory";
+
 /** Saves the users current page content */
 class SaveRecipeButton extends Component {
   static propTypes = {
     handleSave: PropTypes.func
   };
 
+  /**
+   * Initializes State
+   */
   constructor() {
     super();
 
@@ -35,7 +40,7 @@ class SaveRecipeButton extends Component {
 
   /**
    * Sets the state of 'saveError' to a supplied error message
-   * @param <Error> - err
+   * @param {Error} err
    */
   displayError = err => {
     this.setState({ saveError: err });
