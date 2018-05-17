@@ -2,6 +2,7 @@
 
 /** Interface for Getting and parsing HTML for recipes */
 class BaseScrape {
+  /** Initialized html property */
   constructor() {
     this.html = "";
   }
@@ -15,9 +16,13 @@ class BaseScrape {
     return new Promise((resolve, reject) => {
       chrome.tabs.executeScript(
         { code: "document.querySelector('body').innerHTML" },
-        ({ 0: html }) => {
-          this.html = html;
-          resolve();
+        results => {
+          if (results) {
+            this.html = results[0];
+            resolve();
+          } else {
+            reject();
+          }
         }
       );
     });
