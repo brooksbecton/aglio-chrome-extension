@@ -16,7 +16,7 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "docs": "jsdoc src/ -r -d docs",
+    "docs": "jsdoc src/ -r  ./README.md -d docs",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },

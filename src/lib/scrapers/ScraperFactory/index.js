@@ -17,7 +17,7 @@ class ScraperFactory {
    * Creates an instance of a scraper based on the url supplied
    * @async
    * @throws Will throw an error if it doesn't have a scraper for a url
-   * @returns {Function} A Child
+   * @returns {Function} A Child instance of BaseScraper
    */
   async create() {
     const tab = await this.getCurrentTab();

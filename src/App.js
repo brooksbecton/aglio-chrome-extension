@@ -4,6 +4,7 @@ import SaveRecipeButton from "./SaveRecipeButton";
 import ScraperFactory from "./lib/scrapers/ScraperFactory";
 /** Wrapper for application */
 class App extends Component {
+  /** Creates an instance of ScraperFactory and attaches it to component */
   constructor() {
     super();
     this.scraperFactory = new ScraperFactory();

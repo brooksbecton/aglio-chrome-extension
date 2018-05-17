@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-/** Saves the users current page content */
+/** UI for saving the user's current page */
 class SaveRecipeButton extends Component {
   static propTypes = {
     scrapePageRecipe: PropTypes.func
