@@ -23,6 +23,7 @@ class AllRecipesScraper extends BaseScraper {
   /**
    * Gets all ingredients from .list-ingredients-x
    * There can be more than one list
+   * @returns {Array} All the ingredients in a recipe
    */
   getIngredients() {
     /**
