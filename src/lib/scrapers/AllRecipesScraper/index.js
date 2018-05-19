@@ -44,7 +44,11 @@ class AllRecipesScraper extends BaseScraper {
     while (ingredients.length > 0) {
       allIngredients = [
         ...allIngredients,
-        ...ingredients.map(({ innerHTML }) => innerHTML.trim())
+        ...ingredients
+          .filter(
+            ({ innerHTML }) => innerHTML.toLowerCase().indexOf("add all") === -1
+          )
+          .map(({ innerHTML }) => innerHTML.trim())
       ];
       ingredientListCount += 1;
       ingredients = getIngredientList(ingredientListCount);
