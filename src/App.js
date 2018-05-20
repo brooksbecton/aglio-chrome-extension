@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 
-import SaveRecipeButton from "./SaveRecipeButton";
+import SaveRecipeButton from "./components/SaveRecipeButton";
+import RecipeDetails from "./components/RecipeDetails";
 import ScraperFactory from "./lib/scrapers/ScraperFactory";
 /** Wrapper for application */
 class App extends Component {
   /** Creates an instance of ScraperFactory and attaches it to component */
   constructor() {
     super();
+
+    this.state = {
+      recipe: {},
+      recipeLoaded: false
+    };
     this.scraperFactory = new ScraperFactory();
   }
 
@@ -16,13 +22,17 @@ class App extends Component {
    */
   scrapePageRecipe = async () => {
     const scraper = await this.scraperFactory.create();
-    await scraper.run();
+    const recipe = await scraper.run();
+    this.setState({ recipe, recipeLoaded: true });
   };
 
   render() {
     return (
       <div>
         <SaveRecipeButton scrapePageRecipe={this.scrapePageRecipe} />
+        {this.state.recipeLoaded && (
+          <RecipeDetails recipe={this.state.recipe} />
+        )}
         <div className="recipeHtml" />
       </div>
     );
