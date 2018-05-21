@@ -10,6 +10,7 @@
   "dependencies": {
     "npm": "^6.0.1",
     "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
     "url-polyfill": "^1.0.13"
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "docs": "jsdoc src/ -r  ./README.md -d docs",
-    "start": "react-scripts start",
+    "start": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {

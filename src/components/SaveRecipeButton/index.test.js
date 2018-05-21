@@ -1,5 +1,5 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
+import Enzyme, { mount, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 import SaveRecipeButton from "./index";
@@ -13,12 +13,12 @@ describe("SaveRecipeButton", () => {
   });
 
   it("has a button to click", () => {
-    const tree = shallow(<SaveRecipeButton />);
+    const tree = mount(<SaveRecipeButton />);
     expect(tree.find("button").length).toBe(1);
   });
 
   it("calls saveRecipe() when button is clicked", () => {
-    const tree = shallow(<SaveRecipeButton />);
+    const tree = mount(<SaveRecipeButton />);
     const mockSaveRecipe = jest.fn();
     tree.instance().saveRecipe = mockSaveRecipe;
     tree.find("button").simulate("click");

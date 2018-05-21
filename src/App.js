@@ -28,13 +28,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <SaveRecipeButton scrapePageRecipe={this.scrapePageRecipe} />
-        {this.state.recipeLoaded && (
-          <RecipeDetails recipe={this.state.recipe} />
-        )}
+      <div style={{ "width": "600px" }
+      }>
+        {!this.state.recipeLoaded && <SaveRecipeButton scrapePageRecipe={this.scrapePageRecipe} />}
+        {
+          this.state.recipeLoaded && (
+            <RecipeDetails recipe={this.state.recipe} />
+          )
+        }
         <div className="recipeHtml" />
-      </div>
+      </div >
     );
   }
 }

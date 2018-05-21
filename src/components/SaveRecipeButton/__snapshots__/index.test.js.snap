@@ -18,11 +18,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="default"
+          className="saveButton"
+          disabled={false}
           onClick={[Function]}
 >
-          Save Recipe
-</button>,
+          Pull Recipe
+</Button>,
         <p
           className="error"
 />,
@@ -33,14 +39,20 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": "Save Recipe",
+          "active": false,
+          "block": false,
+          "bsClass": "btn",
+          "bsStyle": "default",
+          "children": "Pull Recipe",
+          "className": "saveButton",
+          "disabled": false,
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "Save Recipe",
-        "type": "button",
+        "rendered": "Pull Recipe",
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -64,11 +76,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            className="saveButton"
+            disabled={false}
             onClick={[Function]}
 >
-            Save Recipe
-</button>,
+            Pull Recipe
+</Button>,
           <p
             className="error"
 />,
@@ -79,14 +97,20 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": "Save Recipe",
+            "active": false,
+            "block": false,
+            "bsClass": "btn",
+            "bsStyle": "default",
+            "children": "Pull Recipe",
+            "className": "saveButton",
+            "disabled": false,
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Save Recipe",
-          "type": "button",
+          "rendered": "Pull Recipe",
+          "type": [Function],
         },
         Object {
           "instance": null,

@@ -1,0 +1,18 @@
+.crudButton {
+  max-height: 35px;
+}
+
+.crudButton:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.itemContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.recipeText {
+  flex-grow: 1;
+}
