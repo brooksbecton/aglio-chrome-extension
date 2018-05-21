@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import SaveRecipeButton from "./components/SaveRecipeButton";
+import ScrapeRecipeButton from "./components/ScrapeRecipeButton";
 import RecipeDetails from "./components/RecipeDetails";
 import ScraperFactory from "./lib/scrapers/ScraperFactory";
 /** Wrapper for application */
@@ -28,16 +28,15 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ "width": "600px" }
-      }>
-        {!this.state.recipeLoaded && <SaveRecipeButton scrapePageRecipe={this.scrapePageRecipe} />}
-        {
-          this.state.recipeLoaded && (
-            <RecipeDetails recipe={this.state.recipe} />
-          )
-        }
+      <div style={{ width: "600px" }}>
+        {!this.state.recipeLoaded && (
+          <ScrapeRecipeButton scrapePageRecipe={this.scrapePageRecipe} />
+        )}
+        {this.state.recipeLoaded && (
+          <RecipeDetails recipe={this.state.recipe} />
+        )}
         <div className="recipeHtml" />
-      </div >
+      </div>
     );
   }
 }
