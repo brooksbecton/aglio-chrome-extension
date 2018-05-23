@@ -19,6 +19,18 @@ describe("AllRecipesScraper", () => {
     expect(steps).toEqual(["Add Salt", "Add Pepper", "Bake"]);
   });
 
+  it("ignores empty steps", () => {
+    /**
+     * This HTML string follows the same structure as allrecipes page
+     * But it's recipe steps are "Add Salt, Add Pepper, and Bake"
+     */
+    document.body.innerHTML = `<ol class="list-numbers recipe-directions__list"itemprop=recipeInstructions><li class=step ng-class="{'finished': stepIsActive0}"ng-click="stepIsActive0 = !stepIsActive0"><span class=recipe-directions__list--item></span><li class=step ng-class="{'finished': stepIsActive1}"ng-click="stepIsActive1 = !stepIsActive1"><span class=recipe-directions__list--item>Add Pepper</span><li class=step ng-class="{'finished': stepIsActive2}"ng-click="stepIsActive2 = !stepIsActive2"><span class=recipe-directions__list--item>Bake</span></ol>`;
+
+    const steps = testScraper.getRecipe();
+
+    expect(steps).toEqual(["Add Pepper", "Bake"]);
+  });
+
   it("pulls ingredients from 1 list", () => {
     /**
      * This HTML string follows the same structure as allrecipes page

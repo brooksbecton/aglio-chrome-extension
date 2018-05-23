@@ -15,9 +15,9 @@ class AllRecipesScraper extends BaseScraper {
     );
 
     const recipeSteps = Array.from(recipeNodeList);
-    return recipeSteps.map(({ innerHTML }) =>
-      innerHTML.replace("↵", "").trim()
-    );
+    return recipeSteps
+      .filter(({ innerHTML }) => innerHTML.length > 0)
+      .map(({ innerHTML }) => innerHTML.replace("↵", "").trim());
   }
 
   /**
