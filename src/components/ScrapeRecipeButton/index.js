@@ -17,33 +17,33 @@ class SaveRecipeButton extends Component {
     super();
 
     this.state = {
-      saveError: ""
+      scrapeError: ""
     };
   }
 
   /**
-   * Sets the state of 'saveError' to a supplied error message
+   * Sets the state of 'scrapeError' to a supplied error message
    * @param {Error} err
    */
   displayError = err => {
-    this.setState({ saveError: err });
+    this.setState({ scrapeError: err });
   };
 
   /**
    * Driver function to save a recipe
    * @async
    */
-  saveRecipe = async () => {
+  scrapePageRecipe = async () => {
     this.props.scrapePageRecipe();
   };
   render() {
     return (
       <div>
-        <Button className="saveButton" onClick={() => this.saveRecipe()}>
+        <Button className="saveButton" onClick={() => this.scrapePageRecipe()}>
           Pull Recipe
         </Button>
         <p className="error">
-          {this.state.saveError.length > 0 && this.state.saveError}
+          {this.state.scrapeError.length > 0 && this.state.scrapeError}
         </p>
       </div>
     );
