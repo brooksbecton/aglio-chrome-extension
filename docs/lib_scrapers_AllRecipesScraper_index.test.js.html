@@ -29,6 +29,12 @@
             <pre class="prettyprint source linenums"><code>import AllRecipesScraper from "./index";
 
 describe("AllRecipesScraper", () => {
+  let testScraper;
+
+  beforeEach(() => {
+    testScraper = new AllRecipesScraper();
+  });
+
   it("pulls recipe steps", () => {
     /**
      * This HTML string follows the same structure as allrecipes page
@@ -36,13 +42,10 @@ describe("AllRecipesScraper", () => {
      */
     document.body.innerHTML = `&lt;ol class="list-numbers recipe-directions__list"itemprop=recipeInstructions>&lt;li class=step ng-class="{'finished': stepIsActive0}"ng-click="stepIsActive0 = !stepIsActive0">&lt;span class=recipe-directions__list--item>Add Salt&lt;/span>&lt;li class=step ng-class="{'finished': stepIsActive1}"ng-click="stepIsActive1 = !stepIsActive1">&lt;span class=recipe-directions__list--item>Add Pepper&lt;/span>&lt;li class=step ng-class="{'finished': stepIsActive2}"ng-click="stepIsActive2 = !stepIsActive2">&lt;span class=recipe-directions__list--item>Bake&lt;/span>&lt;/ol>`;
 
-    const testScraper = new AllRecipesScraper();
     const steps = testScraper.getRecipe();
 
     expect(steps).toEqual(["Add Salt", "Add Pepper", "Bake"]);
   });
-
-  it("removes the 'Add all ingredients' li");
 
   it("pulls ingredients from 1 list", () => {
     /**
@@ -51,7 +54,6 @@ describe("AllRecipesScraper", () => {
      */
     document.body.innerHTML = `&lt;ul class="checklist dropdownwrapper list-ingredients-1"id=lst_ingredients_1 ng-hide=reloaded>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/3 cup plain bread crumbs">&lt;input data-id=2112 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,2112) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=2112 data-nameid=2112 itemprop=ingredients>Add all ingredients to list&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/2 cup milk">&lt;input data-id=16278 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,16278) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=16278 data-nameid=16278 itemprop=ingredients>1 Jelly&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="2 tablespoons olive oil">&lt;input data-id=9725 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,9725) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=9725 data-nameid=9725 itemprop=ingredients>1 Bread&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;/ul>`;
 
-    const testScraper = new AllRecipesScraper();
     const ingredients = testScraper.getIngredients();
 
     expect(ingredients).toEqual(["1 Jelly", "1 Bread"]);
@@ -61,7 +63,6 @@ describe("AllRecipesScraper", () => {
     // ingredients are "1 Peanut Butter, 1 Jelly, 1 Bread, 1 Peanut Butter, 1 Jelly, 1 Bread"
     document.body.innerHTML = `&lt;ul class="checklist dropdownwrapper list-ingredients-1"id=lst_ingredients_1 ng-hide=reloaded>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/3 cup plain bread crumbs">&lt;input data-id=2112 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,2112) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=2112 data-nameid=2112 itemprop=ingredients>1 Peanut Butter&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/2 cup milk">&lt;input data-id=16278 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,16278) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=16278 data-nameid=16278 itemprop=ingredients>1 Jelly&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="2 tablespoons olive oil">&lt;input data-id=9725 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,9725) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=9725 data-nameid=9725 itemprop=ingredients>1 Bread&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;/ul>&lt;ul class="checklist dropdownwrapper list-ingredients-1"id=lst_ingredients_1 ng-hide=reloaded>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/3 cup plain bread crumbs">&lt;input data-id=2112 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,2112) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=2112 data-nameid=2112 itemprop=ingredients>1 Peanut Butter&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="1/2 cup milk">&lt;input data-id=16278 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,16278) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=16278 data-nameid=16278 itemprop=ingredients>1 Jelly&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;li class=checkList__line>&lt;label class=checkList__item ng-class="{true: 'checkList__item'}[true]"title="2 tablespoons olive oil">&lt;input data-id=9725 data-role=none name=ingredientCheckbox ng-click=saveIngredient($event,9725) type=checkbox value=N> &lt;span class="added recipe-ingred_txt"data-id=9725 data-nameid=9725 itemprop=ingredients>1 Bread&lt;/span>&lt;/label>&lt;div class=pol-biu-container>&lt;/div>&lt;/ul>`;
 
-    const testScraper = new AllRecipesScraper();
     const ingredients = testScraper.getIngredients();
 
     expect(ingredients).toEqual([
@@ -72,6 +73,14 @@ describe("AllRecipesScraper", () => {
       "1 Jelly",
       "1 Bread"
     ]);
+  });
+
+  it("getMeta grabs the cook time", () => {
+    const expectedCookTime = "1 h 10 m";
+    document.body.innerHTML = `&lt;div class='ready-in-time'>${expectedCookTime}&lt;/div>`;
+
+    const { cookTime: actualCookTime } = testScraper.getMeta();
+    expect(actualCookTime).toBe(expectedCookTime);
   });
 });
 </code></pre>
@@ -84,13 +93,13 @@ describe("AllRecipesScraper", () => {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AllRecipesScraper.html">AllRecipesScraper</a></li><li><a href="App.html">App</a></li><li><a href="BaseScraper.html">BaseScraper</a></li><li><a href="SaveRecipeButton.html">SaveRecipeButton</a></li><li><a href="ScraperFactory.html">ScraperFactory</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AllRecipesScraper.html">AllRecipesScraper</a></li><li><a href="App.html">App</a></li><li><a href="BaseScraper.html">BaseScraper</a></li><li><a href="Recipe.html">Recipe</a></li><li><a href="SaveRecipeButton.html">SaveRecipeButton</a></li><li><a href="ScraperFactory.html">ScraperFactory</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon May 21 2018 14:50:52 GMT-0500 (Central Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed May 23 2018 13:27:50 GMT-0500 (Central Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>

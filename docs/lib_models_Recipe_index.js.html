@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/ScrapeRecipeButton/index.js</title>
+    <title>JSDoc: Source: lib/models/Recipe/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/ScrapeRecipeButton/index.js</h1>
+    <h1 class="page-title">Source: lib/models/Recipe/index.js</h1>
 
     
 
@@ -26,59 +26,32 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { Component } from "react";
-import Button from "react-bootstrap/lib/Button";
-import PropTypes from "prop-types";
+            <pre class="prettyprint source linenums"><code>import firebase, { database } from "./../../firebase";
 
-import "./index.css";
-
-/** UI for saving the user's current page */
-class SaveRecipeButton extends Component {
-  static propTypes = {
-    scrapePageRecipe: PropTypes.func
-  };
-
+/** Handles DB interactions for Model Recipe */
+class Recipe {
   /**
-   * Initializes State
-   */
-  constructor() {
-    super();
-
-    this.state = {
-      scrapeError: ""
-    };
-  }
-
-  /**
-   * Sets the state of 'scrapeError' to a supplied error message
-   * @param {Error} err
-   */
-  displayError = err => {
-    this.setState({ scrapeError: err });
-  };
-
-  /**
-   * Driver function to save a recipe
+   * Inserts a new recipe into the DB
    * @async
+   * @type recipe
+   * @property {Array} ingredients - Array of Strings representing the ingredients for a recipe
+   * @property {Object} meta - Any meta information about the recipe
+   * @property {Array} recipeInstructions - Array of Strings representing the recipe
+   * @property {String} url - The URL the recipe was pulled form
+   * @returns {Promise} - represents the success or failure of the insert
    */
-  scrapePageRecipe = async () => {
-    this.props.scrapePageRecipe();
-  };
-  render() {
-    return (
-      &lt;div>
-        &lt;Button className="saveButton" onClick={() => this.scrapePageRecipe()}>
-          Pull Recipe
-        &lt;/Button>
-        &lt;p className="error">
-          {this.state.scrapeError.length > 0 &amp;&amp; this.state.scrapeError}
-        &lt;/p>
-      &lt;/div>
-    );
+  async insert(recipe) {
+    // var provider = new firebase.auth.GoogleAuthProvider();
+
+    // const { user } = await auth.signInWithRedirect(provider);
+    // const uid = user.uid;
+
+    return database()
+      .ref(`users/${1}/recipes/`)
+      .push(recipe);
   }
 }
-
-export default SaveRecipeButton;
+export default Recipe;
 </code></pre>
         </article>
     </section>
