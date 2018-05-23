@@ -55,7 +55,12 @@ class AllRecipesScraper extends BaseScraper {
     }
     return allIngredients;
   }
-  getMeta() {}
+  getMeta() {
+    function getCookTime() {
+      return document.querySelector(".ready-in-time").innerHTML;
+    }
+    return { cookTime: getCookTime() };
+  }
 }
 
 export default AllRecipesScraper;
