@@ -1,9 +1,13 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.saveButton {
+  width: 100%;
 }
 
 .recipeHtml {
-    display: none;
+  display: none;
 }

@@ -1,11 +1,13 @@
 {
-    "short_name": "Aglio",
-    "name": "Aglio Recipe Saver",
-    "manifest_version": 2,
-    "browser_action": {
-        "default_popup": "index.html",
-        "default_title": "React Ext"
-    },
-    "permissions": ["activeTab"],
-    "version": "1.0"
+  "short_name": "Aglio",
+  "name": "Aglio Recipe Saver",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Aglio"
+  },
+  "permissions": ["activeTab", "identity"],
+  "version": "1.0",
+  "content_security_policy":
+    "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"
 }
