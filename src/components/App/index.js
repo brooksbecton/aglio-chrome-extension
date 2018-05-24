@@ -49,6 +49,11 @@ class App extends Component {
     this.setState({ recipe, recipeLoaded: true });
   };
 
+  updateRecipe = newRecipe => {
+    console.log(newRecipe);
+    this.setState({ recipe: newRecipe });
+  };
+
   render() {
     return (
       <div className="mainContainer">
@@ -63,7 +68,10 @@ class App extends Component {
                 Save
               </Button>
               <br />
-              <RecipeDetails recipe={this.state.recipe} />
+              <RecipeDetails
+                recipe={this.state.recipe}
+                updateRecipe={this.updateRecipe}
+              />
             </div>
           )}
         {this.state.saveSuccess && <h1>Save Success</h1>}
