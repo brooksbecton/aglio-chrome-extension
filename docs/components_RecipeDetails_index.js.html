@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/RecipeDetails/index.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/RecipeDetails/index.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import PropTypes from "prop-types";
+import React, { Component } from "react";
+import Button from "react-bootstrap/lib/Button";
+import Glyphicon from "react-bootstrap/lib/Glyphicon";
+import ListGroup from "react-bootstrap/lib/ListGroup";
+import ListGroupItem from "react-bootstrap/lib/ListGroupItem";
+import Tab from "react-bootstrap/lib/Tab";
+import Tabs from "react-bootstrap/lib/Tabs";
+
+import "./index.css";
+
+/**
+ * Displays the details of a recipe and allows editing of the
+ * ingredients and the recipe steps
+ */
+class RecipeDetails extends Component {
+  /**
+   * Initilizes ingredients &amp; recipe to empty sets in state
+   */
+  constructor() {
+    super();
+
+    this.state = {
+      ingredients: new Set(),
+      recipe: new Set()
+    };
+  }
+
+  /**
+   * Adds the instructions index to the indices of items being edited
+   * @param {Number} instructionIndex
+   * @param {String} itemType - "recipe", "ingredients", or "meta"
+   */
+  openEditItem(instructionIndex, itemType) {
+    const t = new Set([instructionIndex, ...this.state[itemType]]);
+    this.setState({
+      [itemType]: t
+    });
+  }
+
+  /**
+   * Removes the given index from the set of indices of items being edited
+   * @param {Number} instructionIndex  - index of the item being edited
+   * @param {String} itemType - "recipe", "ingredients", or "meta"
+   */
+  closeEdit(instructionIndex, itemType) {
+    let t = this.state[itemType];
+    t.delete(instructionIndex);
+    this.setState({ [itemType]: t });
+  }
+
+  /**
+   * Updates parent component with newItemText
+   * @param {String} newItemText
+   * @param {String} itemType - "recipe", "ingredients", or "meta"
+   * @param {Number} index
+   */
+  updateItem(newItemText, itemType, index) {
+    this.props.updateRecipe({
+      ...this.props.recipe,
+      /* 
+      Only give back the new text if it is the index matches 
+      the index of the item that we are editing 
+      */
+      [itemType]: this.props.recipe[itemType].map((item, i) => {
+        if (i !== index) {
+          return item;
+        } else {
+          return newItemText;
+        }
+      })
+    });
+  }
+
+  /**
+   * Displays UI for item information and editing.
+   * @param {Array} itemSet - Array of strings containing thing like recipe steps or ingredient list
+   * @param {String} itemType - "recipe", "ingredients", or "meta"
+   */
+  renderItem(itemSet, itemType) {
+    return (
+      &lt;ListGroup>
+        {itemSet.map((step, i) => (
+          &lt;ListGroupItem key={i}>
+            {this.state[itemType].has(i) ? (
+              &lt;div className="itemContainer">
+                &lt;textarea
+                  className="itemText"
+                  type="text"
+                  value={step}
+                  onChange={e => this.updateItem(e.target.value, itemType, i)}
+                  wrap="hard"
+                  rows="8"
+                />
+                &lt;Button
+                  onClick={() => this.closeEdit(i, itemType)}
+                  bsStyle="primary"
+                  className={["button", "crudButton"]}
+                >
+                  &lt;Glyphicon glyph="ok" />
+                &lt;/Button>
+              &lt;/div>
+            ) : (
+              &lt;div className="itemContainer">
+                &lt;span className="itemText">{step}&lt;/span>
+                &lt;Button
+                  onClick={() => this.openEditItem(i, itemType)}
+                  bsStyle="info"
+                  className={["editItem", "button", "crudButton"]}
+                >
+                  &lt;Glyphicon glyph="pencil" />
+                &lt;/Button>
+                &lt;Button bsStyle="danger" className={["button", "crudButton"]}>
+                  &lt;Glyphicon glyph="trash" />
+                &lt;/Button>
+              &lt;/div>
+            )}
+          &lt;/ListGroupItem>
+        ))}
+      &lt;/ListGroup>
+    );
+  }
+
+  render() {
+    return (
+      &lt;div>
+        &lt;Tabs defaultActiveKey="Recipe" id="Recipe Details">
+          &lt;Tab eventKey="Recipe" title="Recipe">
+            {this.renderItem(this.props.recipe.recipe, "recipe")}
+          &lt;/Tab>
+          &lt;Tab eventKey="ingredients" title="Ingredients">
+            {this.renderItem(this.props.recipe.ingredients, "ingredients")}
+          &lt;/Tab>
+        &lt;/Tabs>
+      &lt;/div>
+    );
+  }
+}
+
+RecipeDetails.proptypes = {
+  recipe: PropTypes.shape({
+    recipe: PropTypes.arrayOf(PropTypes.string),
+    ingredients: PropTypes.arrayOf(PropTypes.string),
+    meta: PropTypes.object
+  }),
+  updateRecipe: PropTypes.func
+};
+
+export default RecipeDetails;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AllRecipesScraper.html">AllRecipesScraper</a></li><li><a href="App.html">App</a></li><li><a href="BaseScraper.html">BaseScraper</a></li><li><a href="Recipe.html">Recipe</a></li><li><a href="RecipeDetails.html">RecipeDetails</a></li><li><a href="SaveRecipeButton.html">SaveRecipeButton</a></li><li><a href="ScraperFactory.html">ScraperFactory</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 24 2018 16:25:19 GMT-0500 (Central Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
