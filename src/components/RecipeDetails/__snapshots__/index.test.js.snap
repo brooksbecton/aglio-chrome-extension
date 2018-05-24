@@ -1,0 +1,3528 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeDetails matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RecipeDetails
+    recipe={
+        Object {
+            "ingredients": Array [
+              "5 dozen eggs",
+            ],
+            "meta": Object {
+              "cookTime": "2h 5m",
+            },
+            "recipe": Array [
+              "Put all eggs into bowl",
+              "Mix them well",
+              "See what you get",
+            ],
+          }
+    }
+    updateRecipe={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Uncontrolled(Tabs)
+        defaultActiveKey="Recipe"
+        id="Recipe Details"
+>
+        <Tab
+                eventKey="Recipe"
+                title="Recipe"
+        >
+                <ListGroup
+                        bsClass="list-group"
+                >
+                        <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                        >
+                                <div
+                                        className="itemContainer"
+                                >
+                                        <span
+                                                className="itemText"
+                                        >
+                                                Put all eggs into bowl
+                                        </span>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="info"
+                                                className={
+                                                        Array [
+                                                                "editItem",
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                                onClick={[Function]}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="pencil"
+                                                />
+                                        </Button>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="danger"
+                                                className={
+                                                        Array [
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="trash"
+                                                />
+                                        </Button>
+                                </div>
+                        </ListGroupItem>
+                        <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                        >
+                                <div
+                                        className="itemContainer"
+                                >
+                                        <span
+                                                className="itemText"
+                                        >
+                                                Mix them well
+                                        </span>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="info"
+                                                className={
+                                                        Array [
+                                                                "editItem",
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                                onClick={[Function]}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="pencil"
+                                                />
+                                        </Button>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="danger"
+                                                className={
+                                                        Array [
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="trash"
+                                                />
+                                        </Button>
+                                </div>
+                        </ListGroupItem>
+                        <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                        >
+                                <div
+                                        className="itemContainer"
+                                >
+                                        <span
+                                                className="itemText"
+                                        >
+                                                See what you get
+                                        </span>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="info"
+                                                className={
+                                                        Array [
+                                                                "editItem",
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                                onClick={[Function]}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="pencil"
+                                                />
+                                        </Button>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="danger"
+                                                className={
+                                                        Array [
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="trash"
+                                                />
+                                        </Button>
+                                </div>
+                        </ListGroupItem>
+                </ListGroup>
+        </Tab>
+        <Tab
+                eventKey="ingredients"
+                title="Ingredients"
+        >
+                <ListGroup
+                        bsClass="list-group"
+                >
+                        <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                        >
+                                <div
+                                        className="itemContainer"
+                                >
+                                        <span
+                                                className="itemText"
+                                        >
+                                                5 dozen eggs
+                                        </span>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="info"
+                                                className={
+                                                        Array [
+                                                                "editItem",
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                                onClick={[Function]}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="pencil"
+                                                />
+                                        </Button>
+                                        <Button
+                                                active={false}
+                                                block={false}
+                                                bsClass="btn"
+                                                bsStyle="danger"
+                                                className={
+                                                        Array [
+                                                                "button",
+                                                                "crudButton",
+                                                              ]
+                                                }
+                                                disabled={false}
+                                        >
+                                                <Glyphicon
+                                                        bsClass="glyphicon"
+                                                        glyph="trash"
+                                                />
+                                        </Button>
+                                </div>
+                        </ListGroupItem>
+                </ListGroup>
+        </Tab>
+</Uncontrolled(Tabs)>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Tab
+            eventKey="Recipe"
+            title="Recipe"
+>
+            <ListGroup
+                        bsClass="list-group"
+            >
+                        <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                        >
+                                    <div
+                                                className="itemContainer"
+                                    >
+                                                <span
+                                                            className="itemText"
+                                                >
+                                                            Put all eggs into bowl
+                                                </span>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                        Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                            />
+                                                </Button>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                        Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                            />
+                                                </Button>
+                                    </div>
+                        </ListGroupItem>
+                        <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                        >
+                                    <div
+                                                className="itemContainer"
+                                    >
+                                                <span
+                                                            className="itemText"
+                                                >
+                                                            Mix them well
+                                                </span>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                        Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                            />
+                                                </Button>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                        Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                            />
+                                                </Button>
+                                    </div>
+                        </ListGroupItem>
+                        <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                        >
+                                    <div
+                                                className="itemContainer"
+                                    >
+                                                <span
+                                                            className="itemText"
+                                                >
+                                                            See what you get
+                                                </span>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                        Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                            />
+                                                </Button>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                        Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                            />
+                                                </Button>
+                                    </div>
+                        </ListGroupItem>
+            </ListGroup>
+</Tab>,
+          <Tab
+            eventKey="ingredients"
+            title="Ingredients"
+>
+            <ListGroup
+                        bsClass="list-group"
+            >
+                        <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                        >
+                                    <div
+                                                className="itemContainer"
+                                    >
+                                                <span
+                                                            className="itemText"
+                                                >
+                                                            5 dozen eggs
+                                                </span>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                        Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                            />
+                                                </Button>
+                                                <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                        Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                >
+                                                            <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                            />
+                                                </Button>
+                                    </div>
+                        </ListGroupItem>
+            </ListGroup>
+</Tab>,
+        ],
+        "defaultActiveKey": "Recipe",
+        "id": "Recipe Details",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <ListGroup
+              bsClass="list-group"
+>
+              <ListGroupItem
+                            bsClass="list-group-item"
+                            listItem={false}
+              >
+                            <div
+                                          className="itemContainer"
+                            >
+                                          <span
+                                                        className="itemText"
+                                          >
+                                                        Put all eggs into bowl
+                                          </span>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="info"
+                                                        className={
+                                                                      Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                                        onClick={[Function]}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                        />
+                                          </Button>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="danger"
+                                                        className={
+                                                                      Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                        />
+                                          </Button>
+                            </div>
+              </ListGroupItem>
+              <ListGroupItem
+                            bsClass="list-group-item"
+                            listItem={false}
+              >
+                            <div
+                                          className="itemContainer"
+                            >
+                                          <span
+                                                        className="itemText"
+                                          >
+                                                        Mix them well
+                                          </span>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="info"
+                                                        className={
+                                                                      Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                                        onClick={[Function]}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                        />
+                                          </Button>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="danger"
+                                                        className={
+                                                                      Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                        />
+                                          </Button>
+                            </div>
+              </ListGroupItem>
+              <ListGroupItem
+                            bsClass="list-group-item"
+                            listItem={false}
+              >
+                            <div
+                                          className="itemContainer"
+                            >
+                                          <span
+                                                        className="itemText"
+                                          >
+                                                        See what you get
+                                          </span>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="info"
+                                                        className={
+                                                                      Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                                        onClick={[Function]}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                        />
+                                          </Button>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="danger"
+                                                        className={
+                                                                      Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                        />
+                                          </Button>
+                            </div>
+              </ListGroupItem>
+</ListGroup>,
+            "eventKey": "Recipe",
+            "title": "Recipe",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "list-group",
+              "children": Array [
+                <ListGroupItem
+                  bsClass="list-group-item"
+                  listItem={false}
+>
+                  <div
+                                    className="itemContainer"
+                  >
+                                    <span
+                                                      className="itemText"
+                                    >
+                                                      Put all eggs into bowl
+                                    </span>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="info"
+                                                      className={
+                                                                        Array [
+                                                                                          "editItem",
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                                      onClick={[Function]}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                      />
+                                    </Button>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="danger"
+                                                      className={
+                                                                        Array [
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                      />
+                                    </Button>
+                  </div>
+</ListGroupItem>,
+                <ListGroupItem
+                  bsClass="list-group-item"
+                  listItem={false}
+>
+                  <div
+                                    className="itemContainer"
+                  >
+                                    <span
+                                                      className="itemText"
+                                    >
+                                                      Mix them well
+                                    </span>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="info"
+                                                      className={
+                                                                        Array [
+                                                                                          "editItem",
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                                      onClick={[Function]}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                      />
+                                    </Button>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="danger"
+                                                      className={
+                                                                        Array [
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                      />
+                                    </Button>
+                  </div>
+</ListGroupItem>,
+                <ListGroupItem
+                  bsClass="list-group-item"
+                  listItem={false}
+>
+                  <div
+                                    className="itemContainer"
+                  >
+                                    <span
+                                                      className="itemText"
+                                    >
+                                                      See what you get
+                                    </span>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="info"
+                                                      className={
+                                                                        Array [
+                                                                                          "editItem",
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                                      onClick={[Function]}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                      />
+                                    </Button>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="danger"
+                                                      className={
+                                                                        Array [
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                      />
+                                    </Button>
+                  </div>
+</ListGroupItem>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "list-group-item",
+                  "children": <div
+                    className="itemContainer"
+>
+                    <span
+                                        className="itemText"
+                    >
+                                        Put all eggs into bowl
+                    </span>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="info"
+                                        className={
+                                                            Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                                        onClick={[Function]}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="pencil"
+                                        />
+                    </Button>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="danger"
+                                        className={
+                                                            Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="trash"
+                                        />
+                    </Button>
+</div>,
+                  "listItem": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="itemText"
+>
+                        Put all eggs into bowl
+</span>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="info"
+                        className={
+                                                Array [
+                                                                        "editItem",
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+                        onClick={[Function]}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="pencil"
+                        />
+</Button>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="danger"
+                        className={
+                                                Array [
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="trash"
+                        />
+</Button>,
+                    ],
+                    "className": "itemContainer",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Put all eggs into bowl",
+                        "className": "itemText",
+                      },
+                      "ref": null,
+                      "rendered": "Put all eggs into bowl",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "info",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="pencil"
+/>,
+                        "className": Array [
+                          "editItem",
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "pencil",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "danger",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="trash"
+/>,
+                        "className": Array [
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "trash",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "list-group-item",
+                  "children": <div
+                    className="itemContainer"
+>
+                    <span
+                                        className="itemText"
+                    >
+                                        Mix them well
+                    </span>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="info"
+                                        className={
+                                                            Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                                        onClick={[Function]}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="pencil"
+                                        />
+                    </Button>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="danger"
+                                        className={
+                                                            Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="trash"
+                                        />
+                    </Button>
+</div>,
+                  "listItem": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="itemText"
+>
+                        Mix them well
+</span>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="info"
+                        className={
+                                                Array [
+                                                                        "editItem",
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+                        onClick={[Function]}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="pencil"
+                        />
+</Button>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="danger"
+                        className={
+                                                Array [
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="trash"
+                        />
+</Button>,
+                    ],
+                    "className": "itemContainer",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Mix them well",
+                        "className": "itemText",
+                      },
+                      "ref": null,
+                      "rendered": "Mix them well",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "info",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="pencil"
+/>,
+                        "className": Array [
+                          "editItem",
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "pencil",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "danger",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="trash"
+/>,
+                        "className": Array [
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "trash",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "list-group-item",
+                  "children": <div
+                    className="itemContainer"
+>
+                    <span
+                                        className="itemText"
+                    >
+                                        See what you get
+                    </span>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="info"
+                                        className={
+                                                            Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                                        onClick={[Function]}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="pencil"
+                                        />
+                    </Button>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="danger"
+                                        className={
+                                                            Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="trash"
+                                        />
+                    </Button>
+</div>,
+                  "listItem": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="itemText"
+>
+                        See what you get
+</span>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="info"
+                        className={
+                                                Array [
+                                                                        "editItem",
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+                        onClick={[Function]}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="pencil"
+                        />
+</Button>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="danger"
+                        className={
+                                                Array [
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="trash"
+                        />
+</Button>,
+                    ],
+                    "className": "itemContainer",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "See what you get",
+                        "className": "itemText",
+                      },
+                      "ref": null,
+                      "rendered": "See what you get",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "info",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="pencil"
+/>,
+                        "className": Array [
+                          "editItem",
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "pencil",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "danger",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="trash"
+/>,
+                        "className": Array [
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "trash",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <ListGroup
+              bsClass="list-group"
+>
+              <ListGroupItem
+                            bsClass="list-group-item"
+                            listItem={false}
+              >
+                            <div
+                                          className="itemContainer"
+                            >
+                                          <span
+                                                        className="itemText"
+                                          >
+                                                        5 dozen eggs
+                                          </span>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="info"
+                                                        className={
+                                                                      Array [
+                                                                                    "editItem",
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                                        onClick={[Function]}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                        />
+                                          </Button>
+                                          <Button
+                                                        active={false}
+                                                        block={false}
+                                                        bsClass="btn"
+                                                        bsStyle="danger"
+                                                        className={
+                                                                      Array [
+                                                                                    "button",
+                                                                                    "crudButton",
+                                                                                  ]
+                                                        }
+                                                        disabled={false}
+                                          >
+                                                        <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                        />
+                                          </Button>
+                            </div>
+              </ListGroupItem>
+</ListGroup>,
+            "eventKey": "ingredients",
+            "title": "Ingredients",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "list-group",
+              "children": Array [
+                <ListGroupItem
+                  bsClass="list-group-item"
+                  listItem={false}
+>
+                  <div
+                                    className="itemContainer"
+                  >
+                                    <span
+                                                      className="itemText"
+                                    >
+                                                      5 dozen eggs
+                                    </span>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="info"
+                                                      className={
+                                                                        Array [
+                                                                                          "editItem",
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                                      onClick={[Function]}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="pencil"
+                                                      />
+                                    </Button>
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="danger"
+                                                      className={
+                                                                        Array [
+                                                                                          "button",
+                                                                                          "crudButton",
+                                                                                        ]
+                                                      }
+                                                      disabled={false}
+                                    >
+                                                      <Glyphicon
+                                                                        bsClass="glyphicon"
+                                                                        glyph="trash"
+                                                      />
+                                    </Button>
+                  </div>
+</ListGroupItem>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "list-group-item",
+                  "children": <div
+                    className="itemContainer"
+>
+                    <span
+                                        className="itemText"
+                    >
+                                        5 dozen eggs
+                    </span>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="info"
+                                        className={
+                                                            Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                                        onClick={[Function]}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="pencil"
+                                        />
+                    </Button>
+                    <Button
+                                        active={false}
+                                        block={false}
+                                        bsClass="btn"
+                                        bsStyle="danger"
+                                        className={
+                                                            Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                        }
+                                        disabled={false}
+                    >
+                                        <Glyphicon
+                                                            bsClass="glyphicon"
+                                                            glyph="trash"
+                                        />
+                    </Button>
+</div>,
+                  "listItem": false,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="itemText"
+>
+                        5 dozen eggs
+</span>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="info"
+                        className={
+                                                Array [
+                                                                        "editItem",
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+                        onClick={[Function]}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="pencil"
+                        />
+</Button>,
+                      <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="danger"
+                        className={
+                                                Array [
+                                                                        "button",
+                                                                        "crudButton",
+                                                                      ]
+                        }
+                        disabled={false}
+>
+                        <Glyphicon
+                                                bsClass="glyphicon"
+                                                glyph="trash"
+                        />
+</Button>,
+                    ],
+                    "className": "itemContainer",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "5 dozen eggs",
+                        "className": "itemText",
+                      },
+                      "ref": null,
+                      "rendered": "5 dozen eggs",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "info",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="pencil"
+/>,
+                        "className": Array [
+                          "editItem",
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "pencil",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "active": false,
+                        "block": false,
+                        "bsClass": "btn",
+                        "bsStyle": "danger",
+                        "children": <Glyphicon
+                          bsClass="glyphicon"
+                          glyph="trash"
+/>,
+                        "className": Array [
+                          "button",
+                          "crudButton",
+                        ],
+                        "disabled": false,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "bsClass": "glyphicon",
+                          "glyph": "trash",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Uncontrolled(Tabs)
+          defaultActiveKey="Recipe"
+          id="Recipe Details"
+>
+          <Tab
+                    eventKey="Recipe"
+                    title="Recipe"
+          >
+                    <ListGroup
+                              bsClass="list-group"
+                    >
+                              <ListGroupItem
+                                        bsClass="list-group-item"
+                                        listItem={false}
+                              >
+                                        <div
+                                                  className="itemContainer"
+                                        >
+                                                  <span
+                                                            className="itemText"
+                                                  >
+                                                            Put all eggs into bowl
+                                                  </span>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                      Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                            />
+                                                  </Button>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                      Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                            />
+                                                  </Button>
+                                        </div>
+                              </ListGroupItem>
+                              <ListGroupItem
+                                        bsClass="list-group-item"
+                                        listItem={false}
+                              >
+                                        <div
+                                                  className="itemContainer"
+                                        >
+                                                  <span
+                                                            className="itemText"
+                                                  >
+                                                            Mix them well
+                                                  </span>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                      Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                            />
+                                                  </Button>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                      Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                            />
+                                                  </Button>
+                                        </div>
+                              </ListGroupItem>
+                              <ListGroupItem
+                                        bsClass="list-group-item"
+                                        listItem={false}
+                              >
+                                        <div
+                                                  className="itemContainer"
+                                        >
+                                                  <span
+                                                            className="itemText"
+                                                  >
+                                                            See what you get
+                                                  </span>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                      Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                            />
+                                                  </Button>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                      Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                            />
+                                                  </Button>
+                                        </div>
+                              </ListGroupItem>
+                    </ListGroup>
+          </Tab>
+          <Tab
+                    eventKey="ingredients"
+                    title="Ingredients"
+          >
+                    <ListGroup
+                              bsClass="list-group"
+                    >
+                              <ListGroupItem
+                                        bsClass="list-group-item"
+                                        listItem={false}
+                              >
+                                        <div
+                                                  className="itemContainer"
+                                        >
+                                                  <span
+                                                            className="itemText"
+                                                  >
+                                                            5 dozen eggs
+                                                  </span>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                      Array [
+                                                                                "editItem",
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="pencil"
+                                                            />
+                                                  </Button>
+                                                  <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                      Array [
+                                                                                "button",
+                                                                                "crudButton",
+                                                                              ]
+                                                            }
+                                                            disabled={false}
+                                                  >
+                                                            <Glyphicon
+                                                                      bsClass="glyphicon"
+                                                                      glyph="trash"
+                                                            />
+                                                  </Button>
+                                        </div>
+                              </ListGroupItem>
+                    </ListGroup>
+          </Tab>
+</Uncontrolled(Tabs)>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Tab
+              eventKey="Recipe"
+              title="Recipe"
+>
+              <ListGroup
+                            bsClass="list-group"
+              >
+                            <ListGroupItem
+                                          bsClass="list-group-item"
+                                          listItem={false}
+                            >
+                                          <div
+                                                        className="itemContainer"
+                                          >
+                                                        <span
+                                                                      className="itemText"
+                                                        >
+                                                                      Put all eggs into bowl
+                                                        </span>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="info"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "editItem",
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                                      onClick={[Function]}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="pencil"
+                                                                      />
+                                                        </Button>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="danger"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="trash"
+                                                                      />
+                                                        </Button>
+                                          </div>
+                            </ListGroupItem>
+                            <ListGroupItem
+                                          bsClass="list-group-item"
+                                          listItem={false}
+                            >
+                                          <div
+                                                        className="itemContainer"
+                                          >
+                                                        <span
+                                                                      className="itemText"
+                                                        >
+                                                                      Mix them well
+                                                        </span>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="info"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "editItem",
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                                      onClick={[Function]}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="pencil"
+                                                                      />
+                                                        </Button>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="danger"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="trash"
+                                                                      />
+                                                        </Button>
+                                          </div>
+                            </ListGroupItem>
+                            <ListGroupItem
+                                          bsClass="list-group-item"
+                                          listItem={false}
+                            >
+                                          <div
+                                                        className="itemContainer"
+                                          >
+                                                        <span
+                                                                      className="itemText"
+                                                        >
+                                                                      See what you get
+                                                        </span>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="info"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "editItem",
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                                      onClick={[Function]}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="pencil"
+                                                                      />
+                                                        </Button>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="danger"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="trash"
+                                                                      />
+                                                        </Button>
+                                          </div>
+                            </ListGroupItem>
+              </ListGroup>
+</Tab>,
+            <Tab
+              eventKey="ingredients"
+              title="Ingredients"
+>
+              <ListGroup
+                            bsClass="list-group"
+              >
+                            <ListGroupItem
+                                          bsClass="list-group-item"
+                                          listItem={false}
+                            >
+                                          <div
+                                                        className="itemContainer"
+                                          >
+                                                        <span
+                                                                      className="itemText"
+                                                        >
+                                                                      5 dozen eggs
+                                                        </span>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="info"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "editItem",
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                                      onClick={[Function]}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="pencil"
+                                                                      />
+                                                        </Button>
+                                                        <Button
+                                                                      active={false}
+                                                                      block={false}
+                                                                      bsClass="btn"
+                                                                      bsStyle="danger"
+                                                                      className={
+                                                                                    Array [
+                                                                                                  "button",
+                                                                                                  "crudButton",
+                                                                                                ]
+                                                                      }
+                                                                      disabled={false}
+                                                        >
+                                                                      <Glyphicon
+                                                                                    bsClass="glyphicon"
+                                                                                    glyph="trash"
+                                                                      />
+                                                        </Button>
+                                          </div>
+                            </ListGroupItem>
+              </ListGroup>
+</Tab>,
+          ],
+          "defaultActiveKey": "Recipe",
+          "id": "Recipe Details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <ListGroup
+                bsClass="list-group"
+>
+                <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                >
+                                <div
+                                                className="itemContainer"
+                                >
+                                                <span
+                                                                className="itemText"
+                                                >
+                                                                Put all eggs into bowl
+                                                </span>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="info"
+                                                                className={
+                                                                                Array [
+                                                                                                "editItem",
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                                onClick={[Function]}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                                />
+                                                </Button>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="danger"
+                                                                className={
+                                                                                Array [
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                                />
+                                                </Button>
+                                </div>
+                </ListGroupItem>
+                <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                >
+                                <div
+                                                className="itemContainer"
+                                >
+                                                <span
+                                                                className="itemText"
+                                                >
+                                                                Mix them well
+                                                </span>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="info"
+                                                                className={
+                                                                                Array [
+                                                                                                "editItem",
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                                onClick={[Function]}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                                />
+                                                </Button>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="danger"
+                                                                className={
+                                                                                Array [
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                                />
+                                                </Button>
+                                </div>
+                </ListGroupItem>
+                <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                >
+                                <div
+                                                className="itemContainer"
+                                >
+                                                <span
+                                                                className="itemText"
+                                                >
+                                                                See what you get
+                                                </span>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="info"
+                                                                className={
+                                                                                Array [
+                                                                                                "editItem",
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                                onClick={[Function]}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                                />
+                                                </Button>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="danger"
+                                                                className={
+                                                                                Array [
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                                />
+                                                </Button>
+                                </div>
+                </ListGroupItem>
+</ListGroup>,
+              "eventKey": "Recipe",
+              "title": "Recipe",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "list-group",
+                "children": Array [
+                  <ListGroupItem
+                    bsClass="list-group-item"
+                    listItem={false}
+>
+                    <div
+                                        className="itemContainer"
+                    >
+                                        <span
+                                                            className="itemText"
+                                        >
+                                                            Put all eggs into bowl
+                                        </span>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                                Array [
+                                                                                                    "editItem",
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                            />
+                                        </Button>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                                Array [
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                            />
+                                        </Button>
+                    </div>
+</ListGroupItem>,
+                  <ListGroupItem
+                    bsClass="list-group-item"
+                    listItem={false}
+>
+                    <div
+                                        className="itemContainer"
+                    >
+                                        <span
+                                                            className="itemText"
+                                        >
+                                                            Mix them well
+                                        </span>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                                Array [
+                                                                                                    "editItem",
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                            />
+                                        </Button>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                                Array [
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                            />
+                                        </Button>
+                    </div>
+</ListGroupItem>,
+                  <ListGroupItem
+                    bsClass="list-group-item"
+                    listItem={false}
+>
+                    <div
+                                        className="itemContainer"
+                    >
+                                        <span
+                                                            className="itemText"
+                                        >
+                                                            See what you get
+                                        </span>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                                Array [
+                                                                                                    "editItem",
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                            />
+                                        </Button>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                                Array [
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                            />
+                                        </Button>
+                    </div>
+</ListGroupItem>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "list-group-item",
+                    "children": <div
+                      className="itemContainer"
+>
+                      <span
+                                            className="itemText"
+                      >
+                                            Put all eggs into bowl
+                      </span>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="info"
+                                            className={
+                                                                  Array [
+                                                                                        "editItem",
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                                            onClick={[Function]}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="pencil"
+                                            />
+                      </Button>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="danger"
+                                            className={
+                                                                  Array [
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="trash"
+                                            />
+                      </Button>
+</div>,
+                    "listItem": false,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="itemText"
+>
+                          Put all eggs into bowl
+</span>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="info"
+                          className={
+                                                    Array [
+                                                                              "editItem",
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+                          onClick={[Function]}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="pencil"
+                          />
+</Button>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="danger"
+                          className={
+                                                    Array [
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="trash"
+                          />
+</Button>,
+                      ],
+                      "className": "itemContainer",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Put all eggs into bowl",
+                          "className": "itemText",
+                        },
+                        "ref": null,
+                        "rendered": "Put all eggs into bowl",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "info",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="pencil"
+/>,
+                          "className": Array [
+                            "editItem",
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "pencil",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "danger",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="trash"
+/>,
+                          "className": Array [
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "trash",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "list-group-item",
+                    "children": <div
+                      className="itemContainer"
+>
+                      <span
+                                            className="itemText"
+                      >
+                                            Mix them well
+                      </span>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="info"
+                                            className={
+                                                                  Array [
+                                                                                        "editItem",
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                                            onClick={[Function]}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="pencil"
+                                            />
+                      </Button>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="danger"
+                                            className={
+                                                                  Array [
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="trash"
+                                            />
+                      </Button>
+</div>,
+                    "listItem": false,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="itemText"
+>
+                          Mix them well
+</span>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="info"
+                          className={
+                                                    Array [
+                                                                              "editItem",
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+                          onClick={[Function]}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="pencil"
+                          />
+</Button>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="danger"
+                          className={
+                                                    Array [
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="trash"
+                          />
+</Button>,
+                      ],
+                      "className": "itemContainer",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Mix them well",
+                          "className": "itemText",
+                        },
+                        "ref": null,
+                        "rendered": "Mix them well",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "info",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="pencil"
+/>,
+                          "className": Array [
+                            "editItem",
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "pencil",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "danger",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="trash"
+/>,
+                          "className": Array [
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "trash",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "list-group-item",
+                    "children": <div
+                      className="itemContainer"
+>
+                      <span
+                                            className="itemText"
+                      >
+                                            See what you get
+                      </span>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="info"
+                                            className={
+                                                                  Array [
+                                                                                        "editItem",
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                                            onClick={[Function]}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="pencil"
+                                            />
+                      </Button>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="danger"
+                                            className={
+                                                                  Array [
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="trash"
+                                            />
+                      </Button>
+</div>,
+                    "listItem": false,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="itemText"
+>
+                          See what you get
+</span>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="info"
+                          className={
+                                                    Array [
+                                                                              "editItem",
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+                          onClick={[Function]}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="pencil"
+                          />
+</Button>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="danger"
+                          className={
+                                                    Array [
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="trash"
+                          />
+</Button>,
+                      ],
+                      "className": "itemContainer",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "See what you get",
+                          "className": "itemText",
+                        },
+                        "ref": null,
+                        "rendered": "See what you get",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "info",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="pencil"
+/>,
+                          "className": Array [
+                            "editItem",
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "pencil",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "danger",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="trash"
+/>,
+                          "className": Array [
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "trash",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <ListGroup
+                bsClass="list-group"
+>
+                <ListGroupItem
+                                bsClass="list-group-item"
+                                listItem={false}
+                >
+                                <div
+                                                className="itemContainer"
+                                >
+                                                <span
+                                                                className="itemText"
+                                                >
+                                                                5 dozen eggs
+                                                </span>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="info"
+                                                                className={
+                                                                                Array [
+                                                                                                "editItem",
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                                onClick={[Function]}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                                />
+                                                </Button>
+                                                <Button
+                                                                active={false}
+                                                                block={false}
+                                                                bsClass="btn"
+                                                                bsStyle="danger"
+                                                                className={
+                                                                                Array [
+                                                                                                "button",
+                                                                                                "crudButton",
+                                                                                              ]
+                                                                }
+                                                                disabled={false}
+                                                >
+                                                                <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                                />
+                                                </Button>
+                                </div>
+                </ListGroupItem>
+</ListGroup>,
+              "eventKey": "ingredients",
+              "title": "Ingredients",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "list-group",
+                "children": Array [
+                  <ListGroupItem
+                    bsClass="list-group-item"
+                    listItem={false}
+>
+                    <div
+                                        className="itemContainer"
+                    >
+                                        <span
+                                                            className="itemText"
+                                        >
+                                                            5 dozen eggs
+                                        </span>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="info"
+                                                            className={
+                                                                                Array [
+                                                                                                    "editItem",
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                                            onClick={[Function]}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="pencil"
+                                                            />
+                                        </Button>
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="danger"
+                                                            className={
+                                                                                Array [
+                                                                                                    "button",
+                                                                                                    "crudButton",
+                                                                                                  ]
+                                                            }
+                                                            disabled={false}
+                                        >
+                                                            <Glyphicon
+                                                                                bsClass="glyphicon"
+                                                                                glyph="trash"
+                                                            />
+                                        </Button>
+                    </div>
+</ListGroupItem>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "list-group-item",
+                    "children": <div
+                      className="itemContainer"
+>
+                      <span
+                                            className="itemText"
+                      >
+                                            5 dozen eggs
+                      </span>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="info"
+                                            className={
+                                                                  Array [
+                                                                                        "editItem",
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                                            onClick={[Function]}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="pencil"
+                                            />
+                      </Button>
+                      <Button
+                                            active={false}
+                                            block={false}
+                                            bsClass="btn"
+                                            bsStyle="danger"
+                                            className={
+                                                                  Array [
+                                                                                        "button",
+                                                                                        "crudButton",
+                                                                                      ]
+                                            }
+                                            disabled={false}
+                      >
+                                            <Glyphicon
+                                                                  bsClass="glyphicon"
+                                                                  glyph="trash"
+                                            />
+                      </Button>
+</div>,
+                    "listItem": false,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="itemText"
+>
+                          5 dozen eggs
+</span>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="info"
+                          className={
+                                                    Array [
+                                                                              "editItem",
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+                          onClick={[Function]}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="pencil"
+                          />
+</Button>,
+                        <Button
+                          active={false}
+                          block={false}
+                          bsClass="btn"
+                          bsStyle="danger"
+                          className={
+                                                    Array [
+                                                                              "button",
+                                                                              "crudButton",
+                                                                            ]
+                          }
+                          disabled={false}
+>
+                          <Glyphicon
+                                                    bsClass="glyphicon"
+                                                    glyph="trash"
+                          />
+</Button>,
+                      ],
+                      "className": "itemContainer",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "5 dozen eggs",
+                          "className": "itemText",
+                        },
+                        "ref": null,
+                        "rendered": "5 dozen eggs",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "info",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="pencil"
+/>,
+                          "className": Array [
+                            "editItem",
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "pencil",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": false,
+                          "block": false,
+                          "bsClass": "btn",
+                          "bsStyle": "danger",
+                          "children": <Glyphicon
+                            bsClass="glyphicon"
+                            glyph="trash"
+/>,
+                          "className": Array [
+                            "button",
+                            "crudButton",
+                          ],
+                          "disabled": false,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "bsClass": "glyphicon",
+                            "glyph": "trash",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
