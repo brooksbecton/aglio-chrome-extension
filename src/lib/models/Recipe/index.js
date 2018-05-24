@@ -1,11 +1,12 @@
-import firebase, { database } from "./../../firebase";
+import { database } from "./../../firebase";
 
 /** Handles DB interactions for Model Recipe */
 class Recipe {
   /**
    * Inserts a new recipe into the DB
    * @async
-   * @type recipe
+   * @typedef recipe
+   * @type {Object}
    * @property {Array} ingredients - Array of Strings representing the ingredients for a recipe
    * @property {Object} meta - Any meta information about the recipe
    * @property {Array} recipeInstructions - Array of Strings representing the recipe

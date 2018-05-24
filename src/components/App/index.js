@@ -1,9 +1,7 @@
-/*global chrome*/
-
 import React, { Component } from "react";
 import Button from "react-bootstrap/lib/Button";
 
-import ScrapeRecipeButton from "./../ScrapeRecipeButton";
+import "./index.css";
 import RecipeDetails from "./../RecipeDetails";
 import ScraperFactory from "./../../lib/scrapers/ScraperFactory";
 import Recipe from "./../../lib/models/Recipe";
@@ -53,19 +51,23 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ width: "600px" }}>
-        {this.state.recipeLoaded && (
-          <div>
-            <Button
-              bsStyle="success"
-              className="saveButton"
-              onClick={() => this.saveRecipe()}
-            >
-              Save
-            </Button>
-            <RecipeDetails recipe={this.state.recipe} />
-          </div>
-        )}
+      <div className="mainContainer">
+        {!this.state.saveSuccess &&
+          this.state.recipeLoaded && (
+            <div>
+              <Button
+                bsStyle="success"
+                className={["button", "saveButton"]}
+                onClick={() => this.saveRecipe()}
+              >
+                Save
+              </Button>
+              <br />
+              <RecipeDetails recipe={this.state.recipe} />
+            </div>
+          )}
+        {this.state.saveSuccess && <h1>Save Success</h1>}
+
         <div className="recipeHtml" />
       </div>
     );
