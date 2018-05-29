@@ -6,3 +6,8 @@
   padding: 3%;
   width: 600px;
 }
+
+.center {
+  margin: auto;
+  width: 100%;
+}

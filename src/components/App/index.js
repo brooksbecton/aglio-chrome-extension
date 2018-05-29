@@ -27,6 +27,10 @@ class App extends Component {
     this.scrapePageRecipe();
   }
 
+  closeExtension() {
+    window.close();
+  }
+
   /**
    * Save the component's state to the database
    * @async
@@ -44,6 +48,7 @@ class App extends Component {
   /**
    * Creates a scraper for the user's current page and parses
    * data from it.
+   * @async
    */
   scrapePageRecipe = async () => {
     let scraper;
@@ -56,17 +61,39 @@ class App extends Component {
     }
   };
 
+  /**
+   * Updates state.recipe to the newRecipe param
+   * @param {Object} - recipe
+   */
   updateRecipe = newRecipe => {
-    console.log(newRecipe);
     this.setState({ recipe: newRecipe });
   };
 
+  /**
+   * Renders state.scrapeError if there is an error
+   */
   renderScrapeError() {
     if (this.state.scrapeError) {
       return (
-        <div>
-          <h3>Error</h3>
+        <div className="center">
+          <h1>Error</h1>
           <p>{this.state.scrapeError}</p>
+        </div>
+      );
+    }
+  }
+
+  /**
+   * Renders save success message if state.saveSuccess is truthy
+   */
+  renderSaveSuccess() {
+    if (this.state.saveSuccess) {
+      return (
+        <div className="center">
+          <h1>Save Success</h1>
+          <Button bsStyle="primary" onClick={() => this.closeExtension()}>
+            Close
+          </Button>
         </div>
       );
     }
@@ -76,6 +103,7 @@ class App extends Component {
     return (
       <div className="mainContainer">
         {this.renderScrapeError()}
+        {this.renderSaveSuccess()}
 
         {!this.state.saveSuccess &&
           this.state.recipeLoaded && (
@@ -94,8 +122,6 @@ class App extends Component {
               />
             </div>
           )}
-        {this.state.saveSuccess && <h1>Save Success</h1>}
-
         <div className="recipeHtml" />
       </div>
     );

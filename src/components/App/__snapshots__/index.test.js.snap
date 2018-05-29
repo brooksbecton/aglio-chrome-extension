@@ -18,15 +18,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
-          <h3>
+        <div
+          className="center"
+>
+          <h1>
                     Error
-          </h3>
+          </h1>
           <p>
                     Jest offers no recipes!
           </p>
 </div>,
-        null,
+        undefined,
         null,
         <div
           className="recipeHtml"
@@ -42,13 +44,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3>
+            <h1>
               Error
-</h3>,
+</h1>,
             <p>
               Jest offers no recipes!
 </p>,
           ],
+          "className": "center",
         },
         "ref": null,
         "rendered": Array [
@@ -61,7 +64,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Error",
-            "type": "h3",
+            "type": "h1",
           },
           Object {
             "instance": null,
@@ -77,7 +80,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      null,
+      undefined,
       null,
       Object {
         "instance": null,
@@ -100,15 +103,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <h3>
+          <div
+            className="center"
+>
+            <h1>
                         Error
-            </h3>
+            </h1>
             <p>
                         Jest offers no recipes!
             </p>
 </div>,
-          null,
+          undefined,
           null,
           <div
             className="recipeHtml"
@@ -124,13 +129,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3>
+              <h1>
                 Error
-</h3>,
+</h1>,
               <p>
                 Jest offers no recipes!
 </p>,
             ],
+            "className": "center",
           },
           "ref": null,
           "rendered": Array [
@@ -143,7 +149,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Error",
-              "type": "h3",
+              "type": "h1",
             },
             Object {
               "instance": null,
@@ -159,7 +165,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        null,
+        undefined,
         null,
         Object {
           "instance": null,
@@ -205,6 +211,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         undefined,
+        undefined,
         <div>
           <Button
                     active={false}
@@ -244,7 +251,6 @@ ShallowWrapper {
                     updateRecipe={[Function]}
           />
 </div>,
-        false,
         <div
           className="recipeHtml"
 />,
@@ -253,6 +259,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       undefined,
       Object {
         "instance": null,
@@ -360,7 +367,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -382,6 +388,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          undefined,
           undefined,
           <div>
             <Button
@@ -422,7 +429,6 @@ ShallowWrapper {
                         updateRecipe={[Function]}
             />
 </div>,
-          false,
           <div
             className="recipeHtml"
 />,
@@ -431,6 +437,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         undefined,
         Object {
           "instance": null,
@@ -538,7 +545,6 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -583,10 +589,24 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         undefined,
+        <div
+          className="center"
+>
+          <h1>
+                    Save Success
+          </h1>
+          <Button
+                    active={false}
+                    block={false}
+                    bsClass="btn"
+                    bsStyle="primary"
+                    disabled={false}
+                    onClick={[Function]}
+          >
+                    Close
+          </Button>
+</div>,
         false,
-        <h1>
-          Save Success
-</h1>,
         <div
           className="recipeHtml"
 />,
@@ -596,18 +616,62 @@ ShallowWrapper {
     "ref": null,
     "rendered": Array [
       undefined,
-      false,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Save Success",
+          "children": Array [
+            <h1>
+              Save Success
+</h1>,
+            <Button
+              active={false}
+              block={false}
+              bsClass="btn"
+              bsStyle="primary"
+              disabled={false}
+              onClick={[Function]}
+>
+              Close
+</Button>,
+          ],
+          "className": "center",
         },
         "ref": null,
-        "rendered": "Save Success",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save Success",
+            },
+            "ref": null,
+            "rendered": "Save Success",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "block": false,
+              "bsClass": "btn",
+              "bsStyle": "primary",
+              "children": "Close",
+              "disabled": false,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Close",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -630,10 +694,24 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           undefined,
+          <div
+            className="center"
+>
+            <h1>
+                        Save Success
+            </h1>
+            <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="primary"
+                        disabled={false}
+                        onClick={[Function]}
+            >
+                        Close
+            </Button>
+</div>,
           false,
-          <h1>
-            Save Success
-</h1>,
           <div
             className="recipeHtml"
 />,
@@ -643,18 +721,62 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         undefined,
-        false,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Save Success",
+            "children": Array [
+              <h1>
+                Save Success
+</h1>,
+              <Button
+                active={false}
+                block={false}
+                bsClass="btn"
+                bsStyle="primary"
+                disabled={false}
+                onClick={[Function]}
+>
+                Close
+</Button>,
+            ],
+            "className": "center",
           },
           "ref": null,
-          "rendered": "Save Success",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save Success",
+              },
+              "ref": null,
+              "rendered": "Save Success",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "block": false,
+                "bsClass": "btn",
+                "bsStyle": "primary",
+                "children": "Close",
+                "disabled": false,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Close",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,
