@@ -13,7 +13,10 @@ class App extends Component {
     super();
     this.state = {
       recipe: {},
-      recipeLoaded: false
+      recipeLoaded: false,
+      saveSuccess: null,
+      saveError: null,
+      scrapeError: null
     };
     this.recipeModel = new Recipe();
     this.scraperFactory = new ScraperFactory();
@@ -34,7 +37,6 @@ class App extends Component {
       await this.recipeModel.insert(recipe);
       this.setState({ saveSuccess: true });
     } catch (err) {
-      console.error(err);
       this.setState({ saveSuccess: false, saveError: err });
     }
   };
@@ -44,9 +46,14 @@ class App extends Component {
    * data from it.
    */
   scrapePageRecipe = async () => {
-    const scraper = await this.scraperFactory.create();
-    const recipe = await scraper.run();
-    this.setState({ recipe, recipeLoaded: true });
+    let scraper;
+    try {
+      scraper = await this.scraperFactory.create();
+      const recipe = await scraper.run();
+      this.setState({ recipe, recipeLoaded: true });
+    } catch (err) {
+      this.setState({ scrapeError: err.toString() });
+    }
   };
 
   updateRecipe = newRecipe => {
@@ -54,9 +61,22 @@ class App extends Component {
     this.setState({ recipe: newRecipe });
   };
 
+  renderScrapeError() {
+    if (this.state.scrapeError) {
+      return (
+        <div>
+          <h3>Error</h3>
+          <p>{this.state.scrapeError}</p>
+        </div>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="mainContainer">
+        {this.renderScrapeError()}
+
         {!this.state.saveSuccess &&
           this.state.recipeLoaded && (
             <div>

@@ -1,0 +1,681 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches 'No Scraper' snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <h3>
+                    Error
+          </h3>
+          <p>
+                    Jest offers no recipes!
+          </p>
+</div>,
+        null,
+        null,
+        <div
+          className="recipeHtml"
+/>,
+      ],
+      "className": "mainContainer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Error
+</h3>,
+            <p>
+              Jest offers no recipes!
+</p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Error",
+            },
+            "ref": null,
+            "rendered": "Error",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Jest offers no recipes!",
+            },
+            "ref": null,
+            "rendered": "Jest offers no recipes!",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      null,
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "recipeHtml",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <h3>
+                        Error
+            </h3>
+            <p>
+                        Jest offers no recipes!
+            </p>
+</div>,
+          null,
+          null,
+          <div
+            className="recipeHtml"
+/>,
+        ],
+        "className": "mainContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Error
+</h3>,
+              <p>
+                Jest offers no recipes!
+</p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Error",
+              },
+              "ref": null,
+              "rendered": "Error",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Jest offers no recipes!",
+              },
+              "ref": null,
+              "rendered": "Jest offers no recipes!",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        null,
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "recipeHtml",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App matches recipe loaded snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <div>
+          <Button
+                    active={false}
+                    block={false}
+                    bsClass="btn"
+                    bsStyle="success"
+                    className={
+                              Array [
+                                        "button",
+                                        "saveButton",
+                                      ]
+                    }
+                    disabled={false}
+                    onClick={[Function]}
+          >
+                    Save
+          </Button>
+          <br />
+          <RecipeDetails
+                    recipe={
+                              Object {
+                                        "ingredients": Array [
+                                          "JavaScript",
+                                          "vscode",
+                                          "jest",
+                                        ],
+                                        "meta": Object {
+                                          "cookTime": "24h 60m",
+                                        },
+                                        "recipe": Array [
+                                          "eat",
+                                          "sleep",
+                                          "code",
+                                        ],
+                                      }
+                    }
+                    updateRecipe={[Function]}
+          />
+</div>,
+        false,
+        <div
+          className="recipeHtml"
+/>,
+      ],
+      "className": "mainContainer",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Button
+              active={false}
+              block={false}
+              bsClass="btn"
+              bsStyle="success"
+              className={
+                            Array [
+                                          "button",
+                                          "saveButton",
+                                        ]
+              }
+              disabled={false}
+              onClick={[Function]}
+>
+              Save
+</Button>,
+            <br />,
+            <RecipeDetails
+              recipe={
+                            Object {
+                                          "ingredients": Array [
+                                            "JavaScript",
+                                            "vscode",
+                                            "jest",
+                                          ],
+                                          "meta": Object {
+                                            "cookTime": "24h 60m",
+                                          },
+                                          "recipe": Array [
+                                            "eat",
+                                            "sleep",
+                                            "code",
+                                          ],
+                                        }
+              }
+              updateRecipe={[Function]}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "block": false,
+              "bsClass": "btn",
+              "bsStyle": "success",
+              "children": "Save",
+              "className": Array [
+                "button",
+                "saveButton",
+              ],
+              "disabled": false,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Save",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "recipe": Object {
+                "ingredients": Array [
+                  "JavaScript",
+                  "vscode",
+                  "jest",
+                ],
+                "meta": Object {
+                  "cookTime": "24h 60m",
+                },
+                "recipe": Array [
+                  "eat",
+                  "sleep",
+                  "code",
+                ],
+              },
+              "updateRecipe": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "recipeHtml",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <div>
+            <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="success"
+                        className={
+                                    Array [
+                                                "button",
+                                                "saveButton",
+                                              ]
+                        }
+                        disabled={false}
+                        onClick={[Function]}
+            >
+                        Save
+            </Button>
+            <br />
+            <RecipeDetails
+                        recipe={
+                                    Object {
+                                                "ingredients": Array [
+                                                  "JavaScript",
+                                                  "vscode",
+                                                  "jest",
+                                                ],
+                                                "meta": Object {
+                                                  "cookTime": "24h 60m",
+                                                },
+                                                "recipe": Array [
+                                                  "eat",
+                                                  "sleep",
+                                                  "code",
+                                                ],
+                                              }
+                        }
+                        updateRecipe={[Function]}
+            />
+</div>,
+          false,
+          <div
+            className="recipeHtml"
+/>,
+        ],
+        "className": "mainContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Button
+                active={false}
+                block={false}
+                bsClass="btn"
+                bsStyle="success"
+                className={
+                                Array [
+                                                "button",
+                                                "saveButton",
+                                              ]
+                }
+                disabled={false}
+                onClick={[Function]}
+>
+                Save
+</Button>,
+              <br />,
+              <RecipeDetails
+                recipe={
+                                Object {
+                                                "ingredients": Array [
+                                                  "JavaScript",
+                                                  "vscode",
+                                                  "jest",
+                                                ],
+                                                "meta": Object {
+                                                  "cookTime": "24h 60m",
+                                                },
+                                                "recipe": Array [
+                                                  "eat",
+                                                  "sleep",
+                                                  "code",
+                                                ],
+                                              }
+                }
+                updateRecipe={[Function]}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "block": false,
+                "bsClass": "btn",
+                "bsStyle": "success",
+                "children": "Save",
+                "className": Array [
+                  "button",
+                  "saveButton",
+                ],
+                "disabled": false,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Save",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "recipe": Object {
+                  "ingredients": Array [
+                    "JavaScript",
+                    "vscode",
+                    "jest",
+                  ],
+                  "meta": Object {
+                    "cookTime": "24h 60m",
+                  },
+                  "recipe": Array [
+                    "eat",
+                    "sleep",
+                    "code",
+                  ],
+                },
+                "updateRecipe": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "recipeHtml",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App matches save success snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        false,
+        <h1>
+          Save Success
+</h1>,
+        <div
+          className="recipeHtml"
+/>,
+      ],
+      "className": "mainContainer",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Save Success",
+        },
+        "ref": null,
+        "rendered": "Save Success",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "recipeHtml",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          false,
+          <h1>
+            Save Success
+</h1>,
+          <div
+            className="recipeHtml"
+/>,
+        ],
+        "className": "mainContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Save Success",
+          },
+          "ref": null,
+          "rendered": "Save Success",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "recipeHtml",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
